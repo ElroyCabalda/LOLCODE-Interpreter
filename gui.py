@@ -1,5 +1,3 @@
-# !! --------- 
-# Handle sys.exit() better
 
 import sys
 import lex
