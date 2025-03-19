@@ -341,11 +341,11 @@ def boolean_fxn(stack, cur_index, token_list):
 			stack, cur_index = boolean_fxn(stack, cur_index, token_list)
 
 		else:
-			console.insert(tk,END, "Syntax Error: Expected 'Identifier' or 'Literal' keywords, got '" + token_list[cur_index] + "' in line number " + line_nums[cur_index])
+			console.insert(tk.END, "Syntax Error: Expected 'Identifier' or 'Literal' keywords, got '" + token_list[cur_index] + "' in line number " + line_nums[cur_index])
 			valid_flag = False
 
 	else:
-		console.insert(tk,END, "Syntax Error: Expected Boolean keywords, got '" + token_list[cur_index] + "' in line number " + line_nums[cur_index])
+		console.insert(tk.END, "Syntax Error: Expected Boolean keywords, got '" + token_list[cur_index] + "' in line number " + line_nums[cur_index])
 		valid_flag = False
 
 	return stack, cur_index
